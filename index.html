@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.1.81/pdf.min.js"></script>
+    <script src="https://kit.fontawesome.com/e27a52b712.js" crossorigin="anonymous"></script>
+    <title>PDF</title>
+</head>
+<body>
+    <main>
+        <label for="file">
+            <i id="upload-pdf" class="fa-solid fa-file-arrow-up fa-2x"></i>
+            <p>Open PDF File</p>
+        </label>
+        <input id="file" type="file">
+
+        <canvas id="viewer"></canvas>
+    </main>
+
+    <footer class="hidden">
+        <i id="back" class="fa-solid fa-circle-left fa-2x"></i>
+        <p id="pages"></p>
+        <i id="forward" class="fa-solid fa-circle-right fa-2x"></i>
+    </footer>
+    <div class="gap"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
